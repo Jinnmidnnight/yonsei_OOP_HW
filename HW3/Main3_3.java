@@ -12,18 +12,18 @@ public class Main3_3 {
                 str = keyboard.nextLine().trim();
                 System.out.println("Sentence(" + str + ")");
             }
+            else {
+                String test = str;
+                int count = 0;
     
-            String test = str;
-            int count = 0;
-
-            while (test.indexOf(input) != -1) {
-                count ++;
-                test = test.substring(test.indexOf(input) + input.length());
-            }
-
-            if (!input.equals("s")) {
+                while (test.indexOf(input) != -1) {
+                    count ++;
+                    test = test.substring(test.indexOf(input) + input.length());
+                }
+    
                 System.out.println(input + ": " + count);
             }
+    
 
             input = keyboard.next();
         }
