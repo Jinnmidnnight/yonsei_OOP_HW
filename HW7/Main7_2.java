@@ -100,8 +100,8 @@ public class Main7_2 {
 	    System.out.println("c1.compareTo(l3) = " + c1.compareTo(l3));
 	    System.out.println("l2.compareTo(a2) = " + l2.compareTo(a2));
 	    Integer x = new Integer(500);
-	    System.out.println(a3.compareTo(x));
-	    
+	    System.out.println("hi" + a3.compareTo(x));
+	    System.out.println("a3.compareTo(x) = " + a3.compareTo(x));
 	}
 
 }
@@ -121,9 +121,6 @@ class BankAccount72 {
     }
     public void deposit(int money) {
         balance += money;
-        if (balance <= 0) {
-            balance = 0;
-        }
     }
     public void withdraw(int money) {
         balance -= money;
@@ -178,7 +175,9 @@ class BankAccount72 {
         }
     }
     public String compareTo(Object otherObject) {
-        return "Wrong Argument other. Quit the program.";
+        System.out.println("Wrong Argument other. Quit the program.");
+        System.exit(0);
+        return "";
     }
 
 }
